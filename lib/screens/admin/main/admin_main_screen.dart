@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:mycompass_admin_website/core/responsive.dart';
+import 'package:mycompass_admin_website/managers/admin_cubit.dart';
 import 'package:mycompass_admin_website/screens/admin/main/admin_profile_screen.dart';
 import 'package:mycompass_admin_website/screens/admin/main/admin_room-inspections_screen.dart';
 import 'package:mycompass_admin_website/screens/admin/main/admin_show_all_gallery_screen.dart';
@@ -37,6 +39,11 @@ class _AdminMainScreenState extends State<AdminMainScreen> {
     setState(() {
       selectedIndex = index;
     });
+  }
+
+  @override
+  void initState() {
+    super.initState();
   }
 
   @override

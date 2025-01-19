@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:mycompass_admin_website/core/constants.dart';
 import 'package:mycompass_admin_website/core/responsive.dart';
+import 'package:mycompass_admin_website/managers/admin_cubit.dart';
 import 'package:mycompass_admin_website/models/recent_admin.dart';
 import 'package:mycompass_admin_website/models/recent_employee.dart';
 import 'package:mycompass_admin_website/routes/routes_name.dart';
@@ -16,6 +17,13 @@ class ShowAllAdminsScreen extends StatefulWidget {
 }
 
 class _ShowAllAdminsScreenState extends State<ShowAllAdminsScreen> {
+
+  // @override
+  // void initState() {
+  //   AdminCubit.of(context).getAllAdmins();
+  //   super.initState();
+  // }
+
   @override
   Widget build(BuildContext context) {
     return const Directionality(
